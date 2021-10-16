@@ -23,7 +23,7 @@
         height:220px;
         width:450px;
         padding-left: 20px;
-        box-shadow: rgb(71, 71, 71) -10px 10px 10px;
+        box-shadow: rgb(71, 71, 71) -10px 10px 7px;
     }
     h1{
         text-align: center;
@@ -38,7 +38,6 @@
         padding: 4px;
         justify-content: space-between;
         border-radius: 8px;
-        /* box-shadow:gray 10px 10px 4px; */
         transition:0.4s;
     }
     #button:hover{
