@@ -31,3 +31,19 @@
 .btn {
   border-radius: 10px;
 }
+
+#copy {
+  font-size: x-large;
+  z-index: 2;
+  transform: translate(1500%, -140%);
+}
+
+#copy:hover {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #copy {
+    transform: translate(1100%, -130%);
+  }
+}
