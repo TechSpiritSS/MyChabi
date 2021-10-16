@@ -1,39 +1,59 @@
-var password=document.getElementById("password");
+var password = document.getElementById("password");
 
 function copyPassword() {
- var copyText = document.getElementById("password");
- copyText.select();
- document.execCommand("copy");  
+  var copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy");
 }
 var data = 10;
-  
-document.getElementById("counting").innerText = data;  
+
+document.getElementById("counting").innerText = data;
 
 function increment() {
-    if(data<16){
-        data = data + 1;
-        document.getElementById("counting").innerText = data;
-    }
+  if (data < 16) {
+    data = data + 1;
+    document.getElementById("counting").innerText = data;
+  }
 }
-let x=1;
+let x = 1;
 function decrement() {
-    if(data>5){
-        data = data - 1;
-        document.getElementById("counting").innerText = data; 
-    }
-    if(data<10 && Boolean(x)){
-       x=0;
-            alert("Preferred to have atleast 10 characters in password for more security");
-    } 
-
+  if (data > 5) {
+    data = data - 1;
+    document.getElementById("counting").innerText = data;
+  }
+  if (data < 10 && Boolean(x)) {
+    x = 0;
+    alert(
+      "Preferred to have atleast 10 characters in password for more security"
+    );
+  }
 }
 
-function genPassword(){ 
-   var chars = "$@!%*#?&0123456789ABCDabcdefghijklmnopqrstuv6789wxyzEFGHIJKLMNOPQRSTUVWXYZ";
-   var password = "";
+function checkRegex(string) {
+  var checkSpecial = /[*@!#%&()^~{}]+/.test(string),
+    checkUpper = /[A-Z]+/.test(string),
+    checkLower = /[a-z]+/.test(string),
+    r = false;
+
+  if (checkUpper && checkLower && checkSpecial) {
+    r = true;
+  }
+
+  return r;
+}
+
+function genPassword() {
+  var chars =
+    "$@!%*#?&0123456789ABCDabcdefghijklmnopqrstuv6789wxyzEFGHIJKLMNOPQRSTUVWXYZ";
+  let match = true;
+  while (match) {
+    var password = "";
     for (var i = 0; i < data; i++) {
-        var randomNumber = Math.floor(Math.random() * chars.length);
-        password += chars.substring(randomNumber, randomNumber +1);
- }
-       document.getElementById("password").value = password;
+      var randomNumber = Math.floor(Math.random() * chars.length);
+      password += chars.substring(randomNumber, randomNumber + 1);
+    }
+    //Validate TextBox value against the Regex.
+    match = !checkRegex(password);
+  }
+  document.getElementById("password").value = password;
 }
