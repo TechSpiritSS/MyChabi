@@ -11,7 +11,7 @@
 
 .container {
   font-family: "Source Code Pro", monospace;
-  max-width: max-content;
+  max-width: 90vw;
   max-height: max-content;
   margin-top: 10px;
   background: url("https://unsplash.com/photos/7JX0-bfiuxQ/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8UGF0dGVybnx8MHx8fHwxNjM0NDAxMTg0&force=true&w=1920");
@@ -32,10 +32,14 @@
   border-radius: 10px;
 }
 
+#submitBtn {
+  margin: 10px;
+}
+
 #copy {
   font-size: x-large;
   z-index: 2;
-  transform: translate(1500%, -140%);
+  transform: translate(5000%, -130%);
 }
 
 #copy:hover {
