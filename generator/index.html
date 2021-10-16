@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="all">
+    <h1>Password Generator</h1>
+    <br>
+    <div class="box">
+        <label for="password"></label>
+    <input type="text" name="pass" placeholder="Create password" id="password" readonly>
+    <div="container">            
+        <button onclick="decrement()"><</button>
+            <h2 id="counting">Length</h2>
+            <button onclick="increment()">></button>        
+        </div><br>
+    <table>
+        <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+        <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+     </table><br><br>
+     <i id="check">Check password strength</i>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
