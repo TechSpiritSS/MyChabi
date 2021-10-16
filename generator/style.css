@@ -3,7 +3,7 @@
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-    
+
     }
     
     body {
@@ -12,17 +12,18 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/924/1/144/password-wallpaper-preview.jpg");
+    background-image: url("https://images.pexels.com/photos/35543/grid-wire-mesh-stainless-rods-rods-raster.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    /* filter: brightness(100); */
     background-position: center;
         background-repeat: no-repeat;
-        background-size:cover;
-        display:flex;
+        background-size:cover; 
     }
     .all{
         background-color:rgb(25, 25, 26,0.8);
-        height:250px;
+        height:220px;
         width:450px;
         padding-left: 20px;
+        box-shadow: rgb(71, 71, 71) -10px 10px 10px;
     }
     h1{
         text-align: center;
@@ -31,16 +32,23 @@
     }
     #button{
         color:rgb(26, 25, 25);
-        background-color: rgb(214, 210, 210);
+        background-color: rgb(253, 249, 249);
         font-size: 19pt;
         display:flex;
         padding: 4px;
         justify-content: space-between;
-        border: 1px solid black;
         border-radius: 8px;
+        /* box-shadow:gray 10px 10px 4px; */
+        transition:0.4s;
     }
     #button:hover{
         background-color: rgb(119, 116, 116);
+        color:white;
+    }
+    #button:active{
+        transform:scale(0.7);
+        box-shadow: gray 5px 5px 3px;
+        transition:0.1s;
     }
     
     .btn1{
@@ -59,6 +67,3 @@
         display:inline;
         color:rgb(253, 249, 249);
     }
-    #check{
-      color:  rgb(253, 249, 249);
-    }    
