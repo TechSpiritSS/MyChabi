@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="sawo-container"></div>
+    <div class="a hide">
+      <a href="Strength/index.html"><button class="Checker">Checker</button></a>
+      <button class="Generate">Generate</button>
+      <button class="Saved">Saved</button>
+    </div>
+  </body>
+
+  <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+  <script>
+    var config = {
+      // should be same as the id of the container created on 3rd step
+      containerID: "sawo-container",
+      // can be one of 'email' or 'phone_number_sms'
+      identifierType: "email",
+      // Add the API key copied from 2nd step
+      apiKey: "adf291d2-bb55-4165-ad88-62e82365d650",
+      // Add a callback here to handle the payload sent by sdk
+      onSuccess: (payload) => {
+        console.log(payload);
+        const a = document.querySelector(".a");
+        a.classList.remove("hide");
+      },
+    };
+    var sawo = new Sawo(config);
+    sawo.showForm();
+  </script>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://unsplash.com/photos/oMpAz-DN-9I/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0Mzc4ODMx&force=true&w=1920")
+    center;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Checker,
+.Generate,
+.Saved {
+  font-family: "Source Code Pro", monospace;
+  font-size: xx-large;
+  width: 225px;
+  height: 75px;
+  background: url("https://unsplash.com/photos/QKXHNLNgdAw/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjV8fFBhdHRlcm5zfGVufDB8fHx8MTYzNDM5NTkwOQ&force=true&w=640")
+    center;
+  color: white;
+  border-radius: 10%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#sawo-container {
+  height: 50vh;
+  margin: 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
