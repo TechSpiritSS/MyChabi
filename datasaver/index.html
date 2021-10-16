@@ -10,13 +10,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="js/main.js"></script>
-
-
 </head>
 
 <body class='bg-danger' onload='FetchAllValuesDisplayTable()' onload='myFunction()'>
     <div class="container">
-
         <div class="jumbotron text-center">
             <h2 class="keeper">Password Keeper</h2>
             <form action="#" method='post' id='formSubmit'>
@@ -31,14 +28,11 @@
                 <div class="form-group">
                     <label for="password">Password</label>:</label>
                     <input type="password" class="form-control" id="password">
-
                    <h6> <button onclick="myFunction()"" >Copy text</button> </h6>
-                    
                     <script>
                     function myFunction() {
                       /* Get the text field */
-                      var copyText = document.getElementById("password");
-                    
+                      var copyText = document.getElementById("password");                    
                       /* Select the text field */
                       copyText.select();
                       copyText.setSelectionRange(0, 99999); /* For mobile devices */
@@ -50,20 +44,10 @@
                       alert("Copied the text: " + copyText.value);
                     }
                     </script>
-
-
                 </div>
-
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-
-
-
-
-
-
         </div>
-
         <table class="table table-striped">
             <thead class='bg-primary'>
                 <tr>
@@ -72,12 +56,8 @@
                 </tr>
             </thead>
             <tbody id='dynamicFill'>
-
             </tbody>
         </table>
     </div>
-
 </body>
-
-
 </html>
