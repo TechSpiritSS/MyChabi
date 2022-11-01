@@ -1,5 +1,6 @@
 # [MyChabi](https://techspiritss.github.io/MyChabi/)
 
+NOTE - Sometimes site might not load due to Free Tier of API. 
 
 ## Are you always forgotting your passwords?
 ### If you are tired of resetting your passwords then we got the solution for you
